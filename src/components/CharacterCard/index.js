@@ -6,8 +6,8 @@ function CharacterCard(props) {
     <div onClick={() => {
       console.log(props.id);
       props.randomizeCards(props.id)
-    }} className="col-3 card m-2">
-      <div className="img-container">
+    }} className="col-3 m-3 card">
+      <div className="">
         <img className="img-fluid" alt={props.name} src={props.image} />
       </div>
       <div className="content">
