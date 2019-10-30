@@ -1,12 +1,13 @@
 import React from "react";
-import "./style.css";
 
+//handles each character and displays a card.
 function CharacterCard(props) {
   return (
     <div onClick={() => {
       console.log(props.id);
-      props.randomizeCards(props.id)
-    }} className="col-3 m-3 card">
+      props.handleScores(props.id);
+      props.randomizeCards();
+    }} className="col-3 m-md-3 card">
       <div className="">
         <img className="img-fluid" alt={props.name} src={props.image} />
       </div>

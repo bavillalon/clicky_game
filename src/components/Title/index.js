@@ -1,6 +1,5 @@
 import React from "react";
-import "./style.css";
-
+//accepts the title and content ad props to be able to change them in the app component
 function Title(props) {
   return (
   <div className="container jumbotron text-center">
